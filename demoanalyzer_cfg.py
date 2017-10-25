@@ -23,7 +23,7 @@ process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(10000) )
 # set the number of events to be skipped (if any) at end of file below
 
 # define JSON file
-goodJSON = '/home/cms-opendata/CMSSW_5_3_32/src/DimuonSpectrum2011/datasets/Cert_160404-180252_7TeV_ReRecoNov08_Collisions11_JSON.txt'
+goodJSON = 'datasets/Cert_160404-180252_7TeV_ReRecoNov08_Collisions11_JSON.txt'
 
 myLumis = LumiList.LumiList(filename = goodJSON).getCMSSWString().split(',')
 
@@ -41,9 +41,9 @@ import FWCore.Utilities.FileUtils as FileUtils
 # ****************************************************************
 #
 # *** SingleMu data set ***
-# files2011data = FileUtils.loadListFromFile ('/home/cms-opendata/CMSSW_5_3_32/src/DimuonSpectrum2011/datasets/CMS_Run2011A_SingleMu_AOD_12Oct2013-v1_10000_file_index.txt')
+# files2011data = FileUtils.loadListFromFile ('datasets/CMS_Run2011A_SingleMu_AOD_12Oct2013-v1_10000_file_index.txt')
 # *** DoubleMu data set ***
-files2011data = FileUtils.loadListFromFile ('/home/cms-opendata/CMSSW_5_3_32/src/DimuonSpectrum2011/datasets/CMS_Run2011A_DoubleMu_AOD_12Oct2013-v1_10000_file_index.txt')
+files2011data = FileUtils.loadListFromFile ('datasets/CMS_Run2011A_DoubleMu_AOD_12Oct2013-v1_10000_file_index.txt')
 process.source = cms.Source("PoolSource",
     fileNames = cms.untracked.vstring(*files2011data
     )
