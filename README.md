@@ -15,3 +15,5 @@ scram b
 cmsRun demoanalyzer_cfg.py
 ```
 The output of the example is a root file containing several histograms, by default DoubleMu.root with 10000 input events (small subset of data). These can be looked at using a Root Browser.
+
+For more detailed information, read the comments in src/Demoanalyzer.cc.
