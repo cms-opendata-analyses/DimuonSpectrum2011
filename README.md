@@ -1,5 +1,7 @@
 # DimuonSpectrum2011
 
+This is a simple analysis example to compute the spectrum of two muon final state with CMS Open Data.
+
 Run this code in CMS Open Data VM [http://opendata.cern.ch/VM/CMS/2011]
 ```
 cmsrel CMSSW_5_3_32
@@ -12,4 +14,4 @@ scram b
 
 cmsRun demoanalyzer_cfg.py
 ```
-
+The output of the example is a root file containing several histograms, by default DoubleMu.root with 10000 input events (small subset of data). These can be looked at using a Root Browser.
