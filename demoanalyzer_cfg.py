@@ -59,7 +59,7 @@ process.source.lumisToProcess.extend(myLumis)
 # *************************************************
 process.source.skipEvents = cms.untracked.uint32(0)
 
-process.demo = cms.EDAnalyzer('DemoAnalyzer'
+process.demo = cms.EDAnalyzer('DimuonSpectrum2011'
 )
 # ***********************************************************
 # output file name                                          *
