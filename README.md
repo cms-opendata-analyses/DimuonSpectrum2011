@@ -23,9 +23,16 @@ mkdir WorkDir
 cd WorkDir
 git clone https://github.com/cms-opendata-analyses/DimuonSpectrum2011.git
 
+```
+Go to the example directory, and compile with `scram b`. 
+
+```
 cd DimuonSpectrum2011
 scram b
+```
+Run the example as configured in the configuration file. 
 
+```
 cmsRun demoanalyzer_cfg.py
 ```
 The output of the example is a root file containing several histograms, by default DoubleMu.root with 10000 input events (small subset of data). These can be looked at using a Root Browser.
