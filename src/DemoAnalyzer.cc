@@ -1,9 +1,9 @@
 // -*- C++ -*-
 //
-// Package:    DemoAnalyzer
-// Class:      DemoAnalyzer
+// Package:    DimuonSpectrum2011
+// Class:      DimuonSpectrum2011
 //
-/**\class DemoAnalyzer DemoAnalyzer.cc Demo/DemoAnalyzer/src/DemoAnalyzer.cc
+/**\class DimuonSpectrum2011 DimuonSpectrum2011.cc Demo/DimuonSpectrum2011/src/DimuonSpectrum2011.cc
 
  Description: [one line class summary]
 
@@ -64,10 +64,10 @@
 // class declaration
 //
 
-class DemoAnalyzer: public edm::EDAnalyzer {
+class DimuonSpectrum2011: public edm::EDAnalyzer {
 public:
-        explicit DemoAnalyzer(const edm::ParameterSet&);
-        ~DemoAnalyzer();
+        explicit DimuonSpectrum2011(const edm::ParameterSet&);
+        ~DimuonSpectrum2011();
 
 private:
         virtual void beginJob();
@@ -112,7 +112,7 @@ TH1D *h100;
 // constructors and destructor
 //
 
-DemoAnalyzer::DemoAnalyzer(const edm::ParameterSet& iConfig) {
+DimuonSpectrum2011::DimuonSpectrum2011(const edm::ParameterSet& iConfig) {
 
 // *****************************************************************
 // This is the main analysis routine
@@ -202,7 +202,7 @@ h100->GetYaxis()->SetTitle("Number of Events/GeV");
 }
 
 
-DemoAnalyzer::~DemoAnalyzer() {
+DimuonSpectrum2011::~DimuonSpectrum2011() {
         // do anything here that needs to be done at destruction time
         // (e.g. close files, deallocate resources etc.)
 }
@@ -405,11 +405,11 @@ using namespace std;
       }   //end of for(;i!=gmuons....)
     }   //end of if(gmuons->size >=2 .....)
   }   //end of reco ::TrackCollection loop
-} //DemoAnalyzer::analyze ends
+} //DimuonSpectrum2011: analyze ends
 
 
 // ------------ method called once each job just before starting event loop  ------------
-void DemoAnalyzer::beginJob() {
+void DimuonSpectrum2011::beginJob() {
 
 }
 
@@ -418,4 +418,4 @@ void DemoAnalyzer::endJob() {
 }
 
 //define this as a plug-in
-DEFINE_FWK_MODULE(DemoAnalyzer);                                                                            
+DEFINE_FWK_MODULE(DimuonSpectrum2011);                                                                            
