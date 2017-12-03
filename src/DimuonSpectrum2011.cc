@@ -214,7 +214,7 @@ DimuonSpectrum2011::~DimuonSpectrum2011() {
 //
 
 // ------------ method called for each event  ------------
-void DemoAnalyzer::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
+void DimuonSpectrum2011::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
 
 // **********************************************
 // here each relevant event will get analyzed
@@ -414,7 +414,7 @@ void DimuonSpectrum2011::beginJob() {
 }
 
 // ------------ method called once each job just after ending the event loop  ------------
-void DemoAnalyzer::endJob() {
+void DimuonSpectrum2011::endJob() {
 }
 
 //define this as a plug-in
