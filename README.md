@@ -30,6 +30,8 @@ Go to the example directory, and compile with `scram b`.
 cd DimuonSpectrum2011
 scram b
 ```
+In order not to overwrite the existing DoubleMu.root, to which you can compare your output, rename it before you run.
+
 Run the example as configured in the configuration file. 
 
 ```
