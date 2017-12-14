@@ -8,7 +8,7 @@ The modifications with respect to the original code are the following:
 - the class name has been changed from `DemoAnalyzer` to `DimuonSpectrum2011` in order to avoid conflict for any existing `DemoAnalyzer` plugins in the working area
 - the file paths have been modified to be relative in the configuration file, i.e. they point to the `datasets` directory, which is under the directory from where there program will be run.
 
-Run this code in CMS Open Data VM [http://opendata.cern.ch/VM/CMS/2011].
+Run this code in [http://opendata.cern.ch/VM/CMS/2011](CMS Open Data VM).
 
 If you have not installed the CMSSW area do the following:
 ```
