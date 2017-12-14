@@ -38,8 +38,8 @@ scram b
 ```
 
 The input files are defined in the configuration file `demoanalyzer_cfg.py` and are already in the `datasets` directory. This example runs on 2011 data by default, but you also can run it on 2012 data. In this case, download to the the `datasets` directory:
-- [the list of validated runs](http://opendata.cern.ch/record/1002)
-- the file indexes for the 2012 datasets (go to a file record e.g. [/DoubleMuParked/Run2012C-22Jan2013-v1/AOD](http://opendata.cern.ch/record/6030) and download the file index list).
+- [the list of validated runs](http://opendata.cern.ch/record/1002) for 2012
+- the file indexes for the 2012 datasets (go to a file record e.g. [/DoubleMuParked/Run2012C-22Jan2013-v1/AOD](http://opendata.cern.ch/record/6030) and download the file index lists).
 
 In order not to overwrite the existing DoubleMu.root, to which you can compare your output, rename it before you run.
 
