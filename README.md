@@ -27,7 +27,7 @@ Go to this directory, and download the example code.
 
 mkdir WorkDir
 cd WorkDir
-git clone https://github.com/cms-opendata-analyses/DimuonSpectrum2011.git
+git clone git://github.com/cms-opendata-analyses/DimuonSpectrum2011.git
 
 ```
 Go to the example directory, and compile with `scram b`. 
